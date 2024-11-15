@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-primary bg-bg-color text-white leading-loose scroll-smooth;
+  }
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+@keyframes moveCircle {
+  0% {
+    transform: translate(
+      calc(50vw - 36rem),
+      calc(2vh - 18rem)
+    ); /* Start position */
+  }
+  25% {
+    transform: translate(
+      calc(50vw + 18rem),
+      calc(2vh - 18rem)
+    ); /* Move to right */
+  }
+  50% {
+    transform: translate(
+      calc(50vw + 18rem),
+      calc(2vh + 18rem)
+    ); /* Move to bottom-right */
+  }
+  75% {
+    transform: translate(
+      calc(50vw - 18rem),
+      calc(2vh + 18rem)
+    ); /* Move to bottom-left */
+  }
+  100% {
+    transform: translate(
+      calc(50vw - 36rem),
+      calc(2vh - 18rem)
+    ); /* Back to starting position */
+  }
+}
+
+.animate-move-circle {
+  animation: moveCircle 15s infinite; /* 6s duration, loop infinitely */
+}
