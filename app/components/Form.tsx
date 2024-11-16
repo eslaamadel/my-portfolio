@@ -45,12 +45,6 @@ const formSchema = z.object({
     .nonempty({ message: "Please select how you found me." }),
 });
 
-// Define the expected response structure from Formspree
-type FormspreeResponse = {
-  succeeded: boolean;
-  errors?: { message: string }[]; // Adjust according to the actual error structure
-};
-
 const ContactForm = () => {
   const { toast } = useToast(); // Hook to trigger toast notifications
   const [isSubmitting, setIsSubmitting] = useState(false); // Submission state
