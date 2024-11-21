@@ -66,7 +66,7 @@ const config: Config = {
         "h-3": "39px",
         "h-4": "25px",
         p: "19px",
-        "sm-cap": "16px",
+        "sm-cap": "17px",
       },
       borderRadius: {
         lg: "var(--radius)",

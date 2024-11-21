@@ -5,6 +5,7 @@ import SimpleSlider from "./components/SimpleSlider";
 import Myprojects from "./components/Myprojects";
 import Services from "./components/Services";
 import Work from "./components/Work";
+import AboutMe from "./components/AboutMe";
 import Certificate from "./components/Certificate";
 import FAQ from "./components/FAQ";
 import Form from "./components/Form";
@@ -31,6 +32,7 @@ const Home = () => {
         <Myprojects />
         <Services />
         <Work />
+        <AboutMe />
         <Certificate />
         <FAQ />
         <Form />

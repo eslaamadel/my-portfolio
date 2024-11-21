@@ -35,53 +35,56 @@ const workData = [
 
 const Work = () => {
   return (
-    <div className="flex flex-col py-[100px] justify-center items-center gap-24">
-      <div
-        data-aos="fade-up"
-        data-aos-duration="700"
-        className="flex flex-col justify-center items-center gap-4"
-      >
-        <h2 className="text-h-2 text-netu-50 font-bold tb:text-h-3 mb:text-h-4">
-          My Work Experience
-        </h2>
-        <p className="text-h-4 text-netu-500 font-normal text-center leading-[130%] mb:text-p tb:text-p">
-          See how my expertise and passion translate into impactful design and
-          development solutions.
-        </p>
-      </div>
-      <div className="flex flex-col gap-8 relative w-full">
-        <span className="block h-full w-px bg-netu-500 rounded-sm absolute inset-0 m-auto mb:hidden tb:hidden sdk:hidden dk:hidden"></span>
-        {workData.map((work, index) => (
-          <div
-            key={index}
-            data-aos={work.aos}
-            data-aos-duration={work.aosDuration}
-            className={`flex ${
-              index % 2 === 0 ? "justify-start" : "justify-end"
-            } w-full`}
-          >
-            <div className="flex flex-col bg-Primary-900 p-8 rounded-lg h-fit w-2/5 mb:w-full tb:w-full sdk:w-full dk:w-full gap-5 shadow-sm">
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex flex-col">
-                  <span className="text-p leading-[130%]">{work.title}</span>
-                  <p className="text-sm-cap text-netu-500">{work.date}</p>
+    <>
+      <div className="flex flex-col py-[100px] justify-center items-center gap-24">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          className="flex flex-col justify-center items-center gap-4"
+        >
+          <h2 className="text-h-2 text-netu-50 font-bold tb:text-h-3 mb:text-h-4">
+            My Work Experience
+          </h2>
+          <p className="text-h-4 text-netu-500 font-normal text-center leading-[130%] mb:text-p tb:text-p">
+            See how my expertise and passion translate into impactful design and
+            development solutions.
+          </p>
+        </div>
+        <div className="flex flex-col gap-8 relative w-full">
+          <span className="block h-full w-px bg-netu-500/30 rounded-sm absolute inset-0 m-auto mb:hidden tb:hidden sdk:hidden dk:hidden"></span>
+          <span className="block h-0 w-px bg-accent-defaults rounded-sm absolute inset-0 m-auto mt-0 mb:hidden tb:hidden sdk:hidden dk:hidden"></span>
+          {workData.map((work, index) => (
+            <div
+              key={index}
+              data-aos={work.aos}
+              data-aos-duration={work.aosDuration}
+              className={`flex ${
+                index % 2 === 0 ? "justify-start" : "justify-end"
+              } w-full`}
+            >
+              <div className="flex flex-col bg-Primary-900/50 p-8 rounded-lg h-fit w-2/5 mb:w-full tb:w-full sdk:w-full dk:w-full gap-5 shadow-sm">
+                <div className="flex items-center justify-between gap-4">
+                  <div className="flex flex-col">
+                    <span className="text-p leading-[130%]">{work.title}</span>
+                    <p className="text-sm-cap text-netu-500">{work.date}</p>
+                  </div>
+                  <Image
+                    src={work.img}
+                    alt={`${work.title} Logo`}
+                    width={80}
+                    height={80}
+                    objectFit="contain"
+                  />
                 </div>
-                <Image
-                  src={work.img}
-                  alt={`${work.title} Logo`}
-                  width={80}
-                  height={80}
-                  objectFit="contain"
-                />
+                <p className="leading-[145%] font-normal text-p mt-2 text-netu-500 mb:text-sm-cap">
+                  {work.description}
+                </p>
               </div>
-              <p className="leading-[145%] font-normal text-p mt-2 text-netu-500 mb:text-sm-cap">
-                {work.description}
-              </p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
