@@ -55,7 +55,7 @@ const Hero = () => {
                 <a href="mailto:eslamadelwahba@gmail.com">Get in touch</a>
               </Button>
             </div>
-            <div data-aos="fade-up" data-aos-duration="700">
+            <div data-aos="fade-up" data-aos-duration="700" className="w-full">
               <Button
                 variant="secondary"
                 size={"lg"}
