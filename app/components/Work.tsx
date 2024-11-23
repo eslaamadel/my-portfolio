@@ -36,7 +36,7 @@ const workData = [
 const Work = () => {
   return (
     <>
-      <div className="flex flex-col py-[100px] justify-center items-center gap-24">
+      <div className="flex flex-col py-[100px] justify-center items-center gap-24 overflow-x-hidden">
         <div
           data-aos="fade-up"
           data-aos-duration="700"

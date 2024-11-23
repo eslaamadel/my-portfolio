@@ -107,12 +107,12 @@ const Header = () => {
         {/* Mobile Navbar */}
         <ul
           ref={menuRef}
-          className={`flex-col text-h-3 text-netu-100 font-medium gap-[10px] bg-bg-color/80 backdrop-blur-md h-full w-0 fixed top-0 left-0 mb:flex tb:flex sdk:flex justify-center overflow-hidden ${
+          className={`flex-col text-h-3 text-netu-100 font-semibold gap-[10px] bg-bg-color/80 backdrop-blur-md h-full w-0 fixed top-0 left-0 mb:flex tb:flex sdk:flex justify-center overflow-hidden ${
             isOpen ? "mb:w-full tb:w-full sdk:w-full" : "mb:w-0 tb:w-0 sdk:w-0 "
           } transition-all duration-300 ease-in-out dk:transition-none edk:transition-none`}
           onClick={() => setOpen(false)} // Close menu when ul is clicked
         >
-          <div className="text-netu-100 fixed z-50 top-[36px] right-[42px]">
+          <div className="text-netu-100 fixed z-50 top-[36px] right-[80px]">
             <Hamburger rounded toggled={isOpen} toggle={setOpen} />
           </div>
 
@@ -120,7 +120,7 @@ const Header = () => {
             <li key={link.id}>
               <a
                 href={`#${link.id}`}
-                className="w-fit ml-8 my-2 text-netu-100 transition-all duration-300 ease-in-out inline-block hover:text-accent-default hover:-translate-y-2 focus:outline-none focus:text-accent-default focus:-translate-y-2"
+                className="w-fit ml-8 my-2 px-[48px] text-netu-100 transition-all duration-300 ease-in-out inline-block hover:text-accent-default hover:-translate-y-2 focus:outline-none focus:text-accent-default focus:-translate-y-2"
                 tabIndex={isOpen ? 0 : -1} // Disable tab when ul is closed
               >
                 {link.label}
@@ -131,7 +131,7 @@ const Header = () => {
           <Button
             variant="default"
             size={"lg"}
-            className="gap-2 ml-8 my-2 w-fit"
+            className="gap-2 ml-20 my-2 w-fit"
             tabIndex={isOpen ? 0 : -1} // Disable tab when ul is closed
             asChild
           >

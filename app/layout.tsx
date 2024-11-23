@@ -22,7 +22,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="flex flex-col overflow-x-hidden" tabIndex={-1}>
       <body className={`${outfit.variable}`}>
-        {" "}
         <main>{children}</main>
         <Toaster />
       </body>

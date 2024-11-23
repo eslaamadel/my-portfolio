@@ -60,35 +60,35 @@ const SimpleSlider = () => {
             <Image
               src={Company1}
               alt="Logo"
-              className="w-[160px] mb:w-[120px]"
+              className="w-[160px] mb:w-[100px] tb:w-[120px]"
             />
           </div>
           <div className="-ml-7">
             <Image
               src={Company2}
               alt="Logo"
-              className="w-[200px] mb:w-[150px]"
+              className="w-[200px] mb:w-[110px] tb:w-[120px]"
             />
           </div>
           <div>
             <Image
               src={Company3}
               alt="Logo"
-              className="w-[130px] mb:w-[100px]"
+              className="w-[130px] mb:w-[100px] tb:w-[120px]"
             />
           </div>
           <div>
             <Image
               src={Company4}
               alt="Logo"
-              className="w-[170px] mb:w-[140px]"
+              className="w-[170px] mb:w-[120px] tb:w-[120px]"
             />
           </div>
           <div>
             <Image
               src={Company5}
               alt="Logo"
-              className="w-[130px] mb:w-[100px]"
+              className="w-[130px] mb:w-[100px] tb:w-[120px]"
             />
           </div>
         </Slider>

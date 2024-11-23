@@ -21,7 +21,7 @@ const Certificate = () => {
   return (
     <>
       <div
-        className="flex flex-col py-[100px] gap-24 items-center"
+        className="flex flex-col py-[100px] gap-24 items-center overflow-x-hidden"
         id="Certificates"
       >
         <div

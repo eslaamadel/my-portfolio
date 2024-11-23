@@ -27,8 +27,6 @@ const Home = () => {
         ></div>
         <Hero />
         <SimpleSlider />
-      </div>
-      <div className="edk:px-20 px-12 mt-[112px]" tabIndex={-1}>
         <Myprojects />
         <Services />
         <Work />
