@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutMe = () => {
   return (
     <>
-      <div className="flex flex-col py-[100px] justify-center items-center gap-24 overflow-x-hidden">
+      <div className="flex flex-col py-[100px] justify-center items-center gap-24 overflow-x-hidden edk:-mx-20 edk:px-20 px-12 -mx-12">
         <div
           data-aos="fade-up"
           data-aos-duration="700"

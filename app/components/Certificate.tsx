@@ -21,7 +21,7 @@ const Certificate = () => {
   return (
     <>
       <div
-        className="flex flex-col py-[100px] gap-24 items-center overflow-x-hidden"
+        className="flex flex-col py-[100px] gap-24 items-center overflow-x-hidden edk:-mx-20 edk:px-20 px-12 -mx-12"
         id="Certificates"
       >
         <div
@@ -38,7 +38,7 @@ const Certificate = () => {
           </p>
         </div>
         <Carousel data-aos="fade-left" data-aos-duration="600">
-          <CarouselContent className="flex gap-5 h-fit">
+          <CarouselContent className="flex gap-5 h-fit ">
             {images.map((image, index) => (
               <CarouselItem
                 key={index}

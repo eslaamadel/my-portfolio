@@ -20,8 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="flex flex-col overflow-x-hidden" tabIndex={-1}>
-      <body className={`${outfit.variable}`}>
+    <html
+      lang="en"
+      className="flex flex-col w-full overflow-x-hidden"
+      tabIndex={-1}
+    >
+      <body className={`${outfit.variable} relative overflow-x-clip`}>
         <main>{children}</main>
         <Toaster />
       </body>
