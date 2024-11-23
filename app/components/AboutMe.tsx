@@ -9,7 +9,7 @@ const AboutMe = () => {
           data-aos-duration="700"
           className="flex flex-col justify-center items-center gap-4"
         >
-          <h2 className="text-h-2 text-netu-50 font-bold tb:text-h-3 mb:text-h-4">
+          <h2 className="text-h-2 text-netu-50 font-bold tb:text-h-3 mb:text-h-3">
             About Me
           </h2>
         </div>

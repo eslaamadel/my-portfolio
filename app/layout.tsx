@@ -26,7 +26,7 @@ export default function RootLayout({
       tabIndex={-1}
     >
       <body className={`${outfit.variable} relative overflow-x-clip`}>
-        <main>{children}</main>
+        <main className="">{children}</main>
         <Toaster />
       </body>
     </html>

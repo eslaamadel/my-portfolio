@@ -36,14 +36,17 @@ const workData = [
 const Work = () => {
   return (
     <>
-      <div className="flex flex-col py-[100px] justify-center items-center gap-24 overflow-x-hidden edk:-mx-20 edk:px-20 px-12 -mx-12">
+      <div
+        className="flex flex-col py-[100px] justify-center items-center gap-24 overflow-x-hidden edk:-mx-20 edk:px-20 px-12 -mx-12"
+        id="Work"
+      >
         <div
           data-aos="fade-up"
           data-aos-duration="700"
           className="flex flex-col justify-center items-center gap-4"
         >
-          <h2 className="text-h-2 text-netu-50 font-bold tb:text-h-3 mb:text-h-4">
-            My Work Experience
+          <h2 className="text-h-2 text-netu-50 font-bold tb:text-h-3 mb:text-h-3 h-[78px] text-center leading-none">
+            Work Experience
           </h2>
           <p className="text-h-4 text-netu-500 font-normal text-center leading-[130%] mb:text-p tb:text-p">
             See how my expertise and passion translate into impactful design and

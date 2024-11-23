@@ -29,7 +29,7 @@ const Certificate = () => {
           data-aos-duration="700"
           className="flex flex-col justify-center items-center gap-4 edk:w-[1000px] tb:w-[500px] w-fit"
         >
-          <h2 className="text-h-2 text-netu-50 font-bold tb:text-h-3 mb:text-h-4">
+          <h2 className="text-h-2 text-netu-50 font-bold tb:text-h-3 mb:text-h-3">
             My Certificates
           </h2>
           <p className="text-h-4 text-netu-500 font-normal text-center leading-[130%] mb:text-p tb:text-p">
