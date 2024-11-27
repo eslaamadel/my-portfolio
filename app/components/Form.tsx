@@ -173,7 +173,7 @@ const ContactForm = () => {
           data-aos="fade-up"
           data-aos-duration="700"
           onSubmit={form.handleSubmit(onSubmit)}
-          className="mb:w-11/12 tb:w-11/12"
+          className="mb:w-11/12 tb:w-11/12 sdk:w-10/12"
         >
           {/* Username, Email, Phone */}
           <div className="flex flex-row sdk:flex-col tb:flex-col mb:flex-col gap-4">
