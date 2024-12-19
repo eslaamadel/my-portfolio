@@ -30,7 +30,7 @@ const FAQ = () => {
     {
       question: "How can I get in touch to start a project?",
       answer:
-        "To start a project, simply fill out the contact form on our website. I’ll respond promptly to discuss your project needs and how we can collaborate.",
+        "To start a project, simply fill out the contact form on my website. I’ll respond promptly to discuss your project needs and how we can collaborate.",
     },
   ];
 
