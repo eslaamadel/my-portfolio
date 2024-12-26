@@ -6,7 +6,7 @@ const servicesData = [
   {
     title: "Product Design",
     description:
-      "Delivering comprehensive product solutions that prioritize user needs and achieve business objectives, tailored for digital success.",
+      "Crafting innovative and user-centric product solutions that align with business goals and drive digital success.",
     icon: <MdOutlineLightbulb className="w-6 h-6 text-accent-default" />,
     list: [
       "User Research and Personas",
@@ -22,23 +22,23 @@ const servicesData = [
       "Designing captivating visuals that merge aesthetics with functionality to enhance brand identity and user engagement.",
     icon: <IoBrushOutline className="w-6 h-6 text-accent-default" />,
     list: [
-      "User Research and Personas",
-      "UX Strategy and Information Architecture",
-      "UX Design and Prototyping",
-      "UX Testing and Validation",
+      "Brand Identity Design",
+      "UI Design",
+      "Interaction Design",
+      "Visual Asset Creation",
     ],
     aosDuration: "900",
   },
   {
     title: "Web Development",
     description:
-      "Building responsive, high-performance websites with clean, modern code for seamless user experiences across all devices.",
+      "Building responsive, high-performance websites with clean, modern code using HTML, CSS, Tailwind, and Next.js for seamless user experiences across all devices.",
     icon: <HiOutlineCodeBracket className="w-6 h-6 text-accent-default" />,
     list: [
-      "User Research and Personas",
-      "UX Strategy and Information Architecture",
-      "UX Design and Prototyping",
-      "UX Testing and Validation",
+      "Responsive Design",
+      "Front-End Development",
+      "Next.js Integration",
+      "Tailwind CSS",
     ],
     aosDuration: "1000",
   },

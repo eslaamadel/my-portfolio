@@ -27,7 +27,7 @@ const workData = [
     img: Logo3,
     date: "Nov 2024 - Present",
     description:
-      "Developing wireframes and prototypes while transforming Figma designs into functional layouts using HTML, Tailwind CSS, and JavaScript frameworks. Focusing on responsive design, accessibility, and SEO optimization through Next.js server-side rendering. Collaborating with cross-functional teams to implement user feedback and maintain consistent design standards across the platform.",
+      "Developing wireframes and prototypes while transforming Figma designs into functional layouts using HTML, Tailwind CSS, and JavaScript frameworks. Focusing on responsive design and accessibility. Collaborating with cross-functional teams to implement user feedback and maintain consistent design standards across the platform.",
     aos: "fade-right",
     aosDuration: "900",
   },
