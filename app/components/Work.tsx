@@ -76,7 +76,6 @@ const Work = () => {
                     alt={`${work.title} Logo`}
                     width={80}
                     height={80}
-                    objectFit="contain"
                   />
                 </div>
                 <p className="leading-[145%] font-normal text-p mt-2 text-netu-500 mb:text-sm-cap">

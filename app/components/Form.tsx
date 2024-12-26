@@ -164,7 +164,7 @@ const ContactForm = () => {
           Interested in working with me?!
         </h2>
         <p className="text-h-4 text-netu-500 font-normal text-center leading-[130%] mb:text-p tb:text-p">
-          Fill out this form to give me an overview of your project.
+          Fill out this form, and I'll get in touch with you about your project.
         </p>
       </div>
       <div></div>

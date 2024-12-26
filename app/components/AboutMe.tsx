@@ -41,30 +41,18 @@ const AboutMe = () => {
               </h4>
               <p className="text-h-4 leading-snug font-light text-netu-400 tb:text-sm-cap mb:text-sm-cap">
                 I'm <span className="text-accent-default">Eslam Adel</span>, a
-                Product Design Lead based in Cairo with over 5 years of
-                experience crafting user-centered solutions that drive business
-                success.
+                creative UX/UI Developer skilled in designing and developing
+                intuitive, user-friendly interfaces for web and mobile
+                applications.
                 <br />
                 <br />
-                My love for design began with a realization: one day, I watched
-                my grandfather struggle with taking his medications on time and
-                I thought—"Why isn’t this easier?" From that moment, I knew I
-                wanted to create things that everyone could use effortlessly.
                 <br />
-                <br />
-                What started as a hobby has grown into a passion for creating
-                user-centered designs that drive growth.
-                <br />
-                <br />
-                That curiosity never left me, and today, I bring the same spirit
-                of exploration and problem-solving to my design work. I combine
-                form and function to develop intuitive user experiences that
-                solve real problems and bring joy.
-                <br />
-                <br />
-                As a leader, I believe in fostering collaboration, leading by
-                example, and mentoring junior designers to reach their full
-                potential.
+                With experience at SATA Group, Techzone Labs, and eBSEG, he
+                excels in creating responsive designs, enhancing user
+                satisfaction, and collaborating with cross-functional teams.
+                Proficient in tools like Figma, Adobe XD, and Rive, he combines
+                design expertise with front-end development to deliver
+                innovative solutions.
               </p>
             </div>
           </div>
