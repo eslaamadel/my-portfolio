@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import SimpleSlider from "./components/SimpleSlider";
 import Myprojects from "./components/Myprojects";
 import Services from "./components/Services";
+import Splash from "./components/Splash";
 import Work from "./components/Work";
 import AboutMe from "./components/AboutMe";
 import Certificate from "./components/Certificate";
@@ -26,6 +27,7 @@ const Home = () => {
         <SimpleSlider />
         <Myprojects />
         <Services />
+        <Splash />
         <Work />
         <AboutMe />
         <Certificate />
