@@ -44,7 +44,7 @@ const Splash = () => {
             />
             <Image
               src={item.logo}
-              className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-3/4 mb:w-28 tb:w-36 sdk:w-44 w-52"
+              className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-3/4 mb:w-1/3 tb:w-2/5 sdk:w-5/12 w-1/2"
               alt={`Logo ${index + 1}`}
             />
           </div>
