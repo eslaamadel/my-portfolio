@@ -305,11 +305,13 @@ const ContactForm = () => {
                         <FormControl>
                           <RadioGroupItem value={option.id} />
                         </FormControl>
-                        <FormLabel className="font-light">
-                          {option.label}{" "}
-                          <span className="text-netu-500 text-sm-cap ml-1">
-                            {option.ex}
-                          </span>
+                        <FormLabel className="font-light inline">
+                          {option.label}
+                          <FormLabel className="text-netu-600">
+                            <span className="ml-2 text-sm-cap ">
+                              {option.ex}
+                            </span>
+                          </FormLabel>
                         </FormLabel>
                       </FormItem>
                     ))}
