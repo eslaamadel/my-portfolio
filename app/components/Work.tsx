@@ -69,7 +69,9 @@ const Work = () => {
                 <div className="flex items-center justify-between gap-4">
                   <div className="flex flex-col">
                     <span className="text-p leading-[130%]">{work.title}</span>
-                    <p className="text-sm-cap text-netu-500">{work.date}</p>
+                    <p className="text-sm-cap  mb:w-max text-netu-500">
+                      {work.date}
+                    </p>
                   </div>
                   <Image
                     src={work.img}
