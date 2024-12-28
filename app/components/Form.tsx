@@ -40,9 +40,9 @@ const formSchema = z.object({
     .array(z.string())
     .nonempty({ message: "You must select at least one service." }),
   timeline: z.string().nonempty({ message: "Please select a timeline." }),
-  discovery: z
+  /*   discovery: z
     .string()
-    .nonempty({ message: "Please select how you found me." }),
+    .nonempty({ message: "Please select how you found me." }), */
 });
 
 const ContactForm = () => {
@@ -62,7 +62,7 @@ const ContactForm = () => {
       services: [],
       breif: "",
       timeline: "",
-      discovery: "",
+      /* discovery: "", */
     },
   });
 
@@ -319,7 +319,7 @@ const ContactForm = () => {
               )}
             />
 
-            {/* <FormField
+            {/*             <FormField
               control={form.control}
               name="discovery"
               render={({ field }) => (
