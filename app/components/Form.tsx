@@ -77,19 +77,19 @@ const ContactForm = () => {
 
   const timelineOption = useMemo(
     () => [
-      { id: "1week", label: "1 Week" },
-      { id: "2week", label: "2 Week" },
-      { id: "1month", label: "1 Month" },
+      { id: "Short-tream", label: "Short-term ", ex: "(1-3 months)" },
+      { id: "mid-tream", label: "Mid-term", ex: "(3-6 months)" },
+      { id: "log-tream", label: "Long-term", ex: "(6+ months)" },
     ],
     []
   );
-  const discoveryOptions = useMemo(
+  /*   const discoveryOptions = useMemo(
     () => [
       { id: "linkedin", label: "LinkedIn" },
       { id: "google", label: "Google Search" },
     ],
     []
-  );
+  ); */
 
   // Watch form values
   const formValues = form.watch(); // Watch all form fields
@@ -242,7 +242,7 @@ const ContactForm = () => {
                 <FormLabel>Tell me about your project</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Leave a message..."
+                    placeholder="Briefly describe your project, goals, and any specific requirements..."
                     className="resize-none"
                     {...field}
                   />
@@ -278,9 +278,7 @@ const ContactForm = () => {
                           }}
                         />
                       </FormControl>
-                      <FormLabel className="font-normal">
-                        {item.label}
-                      </FormLabel>
+                      <FormLabel className="font-light">{item.label}</FormLabel>
                     </FormItem>
                   ))}
                   <FormMessage />
@@ -293,7 +291,7 @@ const ContactForm = () => {
               name="timeline"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>What is your timeline for this project?</FormLabel>
+                  <FormLabel>What is the timeline for your project?</FormLabel>
                   <RadioGroup
                     onValueChange={field.onChange}
                     value={field.value}
@@ -307,8 +305,11 @@ const ContactForm = () => {
                         <FormControl>
                           <RadioGroupItem value={option.id} />
                         </FormControl>
-                        <FormLabel className="font-normal">
-                          {option.label}
+                        <FormLabel className="font-light">
+                          {option.label}{" "}
+                          <span className="text-netu-500 text-sm-cap ml-1">
+                            {option.ex}
+                          </span>
                         </FormLabel>
                       </FormItem>
                     ))}
@@ -318,7 +319,7 @@ const ContactForm = () => {
               )}
             />
 
-            <FormField
+            {/* <FormField
               control={form.control}
               name="discovery"
               render={({ field }) => (
@@ -337,7 +338,7 @@ const ContactForm = () => {
                         <FormControl>
                           <RadioGroupItem value={option.id} />
                         </FormControl>
-                        <FormLabel className="font-normal">
+                        <FormLabel className="font-light">
                           {option.label}
                         </FormLabel>
                       </FormItem>
@@ -346,7 +347,7 @@ const ContactForm = () => {
                   <FormMessage />
                 </FormItem>
               )}
-            />
+            /> */}
           </div>
 
           {/* Formspree Error Handling */}
