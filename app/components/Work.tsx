@@ -74,10 +74,9 @@ const Work = () => {
                     </p>
                   </div>
                   <Image
+                    className="mb:w-1/4 tb:w-[15%] sdk:w-[10%] dk:w-[10%] w-1/6"
                     src={work.img}
                     alt={`${work.title} Logo`}
-                    width={80}
-                    height={80}
                   />
                 </div>
                 <p className="leading-[145%] font-normal text-p mt-2 text-netu-500 mb:text-sm-cap">
