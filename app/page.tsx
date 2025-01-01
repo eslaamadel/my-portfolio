@@ -1,7 +1,7 @@
 import "./globals.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import SimpleSlider from "./components/SimpleSlider";
+import SwiperSlider from "./components/SwiperSlider";
 import Myprojects from "./components/Myprojects";
 import Services from "./components/Services";
 import Splash from "./components/Splash";
@@ -24,7 +24,8 @@ const Home = () => {
       </div>
       <div className="edk:px-20 px-12 mt-[112px]" tabIndex={-1}>
         <Hero />
-        <SimpleSlider />
+        {/* <SimpleSlider /> */}
+        <SwiperSlider />
         <Myprojects />
         <Services />
         <Splash />
