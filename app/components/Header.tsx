@@ -98,7 +98,7 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <Button variant="default" size={"lg"} tabIndex={1} asChild>
+            <Button variant="default" size={"lg"} asChild>
               <a
                 href="mailto:eslamadelwahba@gmail.com"
                 className="flex gap-2 items-center"
