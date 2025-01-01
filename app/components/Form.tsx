@@ -267,6 +267,7 @@ const ContactForm = () => {
                     >
                       <FormControl>
                         <Checkbox
+                          aria-label={item.label}
                           checked={field.value.includes(item.id)}
                           onCheckedChange={(checked) => {
                             const newValues = checked
@@ -303,7 +304,11 @@ const ContactForm = () => {
                         className="flex items-center space-x-3 space-y-0"
                       >
                         <FormControl>
-                          <RadioGroupItem value={option.id} />
+                          <RadioGroupItem
+                            aria-label={option.label}
+                            value={option.id}
+                            tabIndex={0}
+                          />
                         </FormControl>
                         <FormLabel className="font-light inline">
                           {option.label}

@@ -36,9 +36,9 @@ const AboutMe = () => {
               Experience, Empathy, and Passion Shape My Work.
             </h2>
             <div className="flex flex-col">
-              <h4 className="text-h-3 font-semibold text-neutral-200 tb:text-p mb:text-h-4">
+              <h2 className="text-h-3 font-semibold text-neutral-200 tb:text-p mb:text-h-4">
                 Hey there 👋🏻
-              </h4>
+              </h2>
               <p className="text-h-4 leading-snug font-light text-netu-400 tb:text-sm-cap mb:text-sm-cap">
                 I'm <span className="text-accent-default">Eslam Adel</span>, a
                 creative UX/UI Developer skilled in designing and developing

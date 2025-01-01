@@ -39,7 +39,7 @@ const Hero = () => {
                 />
               </span>
             </h1>
-            <h4
+            <h2
               data-aos="fade-up"
               data-aos-duration="500"
               className="text-h-4 text-netu-500 font-light text-center edk:w-[1000px] w-full mb:text-p-1 tb:text-h4 mb:text-p"
@@ -47,7 +47,7 @@ const Hero = () => {
               Hi, I&apos;m Eslam, a passionate web developer and UI/UX designer
               focused on creating user-friendly and visually appealing digital
               products.
-            </h4>
+            </h2>
           </div>
           <div className="flex gap-7 mb:flex-col mb:gap-4 mb:items-center ">
             <div data-aos="fade-up" data-aos-duration="600">

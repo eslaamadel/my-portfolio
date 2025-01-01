@@ -73,7 +73,7 @@ const Services = () => {
                 {service.icon}
               </div>
               <div className="flex flex-col">
-                <h4 className="text-h-4 font-bold">{service.title}</h4>
+                <h2 className="text-h-4 font-bold">{service.title}</h2>
                 <p className="text-p font-normal text-netu-500 leading-[130%]">
                   {service.description}
                 </p>

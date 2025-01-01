@@ -73,11 +73,16 @@ const Header = () => {
     <>
       <div className="flex mb:flex-col tb:flex-col justify-center py-5 w-full">
         <div className="flex px-[38px] py-[16px] bg-Primary-900 rounded-[80px] w-[888px] justify-between items-center tb:w-full mb:w-full">
-          <a href="/" tabIndex={1}>
+          <a href="/">
             <Image src={Logo} alt="Logo" width={32} height={32} />
           </a>
           <div className="hidden tb:block mb:block sdk:block text-netu-100 hamburger-wrapper">
-            <Hamburger rounded toggled={isOpen} toggle={setOpen} />
+            <Hamburger
+              label="Hamburger menu"
+              rounded
+              toggled={isOpen}
+              toggle={setOpen}
+            />
           </div>
           <div className="flex gap-4 mb:hidden tb:hidden sdk:hidden items-center">
             <ul className="flex text-p text-netu-100 font-medium items-center gap-[10px]">
@@ -86,7 +91,7 @@ const Header = () => {
                   <a
                     href={`#${link.id}`}
                     className="px-4 py-2 hover:text-accent-default transition-all duration-300 inline-block ease-in-out transform hover:-translate-y-2"
-                    tabIndex={1}
+                    tabIndex={0}
                   >
                     {link.label}
                   </a>
@@ -112,9 +117,14 @@ const Header = () => {
           } transition-all duration-300 ease-in-out dk:transition-none edk:transition-none`}
           onClick={() => setOpen(false)} // Close menu when ul is clicked
         >
-          <div className="text-netu-100 fixed z-50 top-[36px] right-[80px]">
-            <Hamburger rounded toggled={isOpen} toggle={setOpen} />
-          </div>
+          <li className="text-netu-100 fixed z-50 top-[36px] right-[80px]">
+            <Hamburger
+              label="Hamburger menu"
+              rounded
+              toggled={isOpen}
+              toggle={setOpen}
+            />
+          </li>
 
           {navLinks.map((link) => (
             <li key={link.id}>
@@ -135,9 +145,11 @@ const Header = () => {
             tabIndex={isOpen ? 0 : -1} // Disable tab when ul is closed
             asChild
           >
-            <a href="mailto:eslamadelwahba@gmail.com">
-              <LuArrowUpRight className="h-5 w-5" /> Get in touch
-            </a>
+            <li>
+              <a href="mailto:eslamadelwahba@gmail.com" className="flex gap-2">
+                <LuArrowUpRight className="h-5 w-5" /> Get in touch
+              </a>
+            </li>
           </Button>
         </ul>
       </div>
