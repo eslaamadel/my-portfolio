@@ -49,8 +49,8 @@ const Work = () => {
             Work Experience
           </h2>
           <p className="text-h-4 text-netu-500 font-normal text-center leading-[130%] mb:text-p tb:text-p">
-            See how my expertise and passion translate into impactful design and
-            development solutions.
+            Highlighting my career journey, showcasing roles, achievements, and
+            skills I've mastered.
           </p>
         </div>
         <div className="flex flex-col gap-8 relative w-full">
