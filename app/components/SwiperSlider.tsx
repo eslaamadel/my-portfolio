@@ -22,7 +22,6 @@ const SwiperSlider = () => {
     <>
       <div className="my-[60px] slider-container">
         <Swiper
-          spaceBetween={50}
           autoplay={{
             delay: 0, // No delay between transitions
           }}
@@ -32,11 +31,9 @@ const SwiperSlider = () => {
           breakpoints={{
             0: {
               slidesPerView: 1,
-              spaceBetween: 20,
             },
             591: {
               slidesPerView: 2,
-              spaceBetween: 30,
             },
             745: {
               slidesPerView: 3,
