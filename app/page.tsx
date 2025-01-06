@@ -24,7 +24,6 @@ const Home = () => {
       </div>
       <div className="edk:px-20 px-12 mt-[112px]" tabIndex={-1}>
         <Hero />
-        {/* <SimpleSlider /> */}
         <SwiperSlider />
         <Myprojects />
         <Services />
