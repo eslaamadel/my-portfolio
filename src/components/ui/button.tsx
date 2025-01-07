@@ -5,18 +5,18 @@ import { cn } from "@/lib/utils";
 import { M_PLUS_1 } from "next/font/google";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-950 disabled:pointer-events-none disabled:opacity-50 dark:focus-visible:ring-slate-300",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 dark:focus-visible:ring-slate-950 disabled:pointer-events-none disabled:opacity-50 focus-visible:ring-slate-300",
   {
     variants: {
       variant: {
         default:
-          "bg-accent-default text-white shadow-sm hover:bg-accent-Hover focus:bg-accent-Hover active:bg-Primary-800 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90",
+          "dark:bg-accent-default dark:text-white dark:shadow-sm dark:hover:bg-accent-Hover dark:focus:bg-accent-Hover dark:active:bg-Primary-800",
         destructive:
-          "bg-red-500 text-slate-50 shadow-sm hover:bg-red-500/90 dark:bg-red-900 dark:text-slate-50 dark:hover:bg-red-900/90",
+          "dark:bg-red-500 text-slate-50 shadow-sm hover:bg-red-500/90 bg-red-900",
         outline:
           "border border-slate-200 bg-white shadow-sm hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800 dark:bg-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50",
         secondary:
-          "bg-Primary-900 text-white shadow-sm hover:bg-Primary-800/50 focus:bg-Primary-800/50 active:bg-Primary-800/40 dark:bg-slate-800 dark:text-slate-50 dark:hover:bg-slate-800/80",
+          "dark:bg-Primary-900 dark:text-white dark:shadow-sm dark:hover:bg-Primary-800/50 dark:focus:bg-Primary-800/50 dark:active:bg-Primary-800/40",
         ghost:
           "hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-50",
         link: "text-slate-900 underline-offset-4 hover:underline dark:text-slate-50",

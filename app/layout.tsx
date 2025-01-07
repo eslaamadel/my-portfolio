@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="flex flex-col w-full overflow-x-hidden"
+      className="flex flex-col w-full overflow-x-hidden dark"
       tabIndex={-1}
     >
       <body className={`${outfit.variable} relative overflow-x-clip`}>

@@ -43,7 +43,7 @@ const config: Config = {
         "netu-900": "#1A1A1A",
         "netu-950": "#0D0D0D",
         accent: {
-          default: "#1F6FBE",
+          default: "#1c63ab",
           Hover: "#004C99",
         },
         "Primary-50": "#E5F2FF",

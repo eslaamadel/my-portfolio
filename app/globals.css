@@ -7,7 +7,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply font-primary bg-bg-color text-white leading-loose scroll-smooth;
+    @apply font-primary dark:bg-bg-color text-white leading-loose scroll-smooth;
   }
   :root {
     --radius: 0.5rem;
