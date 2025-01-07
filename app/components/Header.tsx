@@ -97,7 +97,7 @@ const Header = () => {
               />
             </svg>
           </a>
-          <div className="hidden tb:block mb:block sdk:block dark:text-netu-100 bg-accent-default hamburger-wrapper">
+          <div className="hidden tb:block mb:block sdk:block dark:text-netu-100 hamburger-wrapper">
             <Hamburger
               label="Hamburger menu"
               rounded
