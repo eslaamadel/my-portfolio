@@ -54,7 +54,8 @@ const config: Config = {
         "Primary-800": "#003366",
         "Primary-900": "#001933",
         "Primary-950": "#000D1A",
-        "bg-color": "#000B1A",
+        "bg-dark-color": "#000B1A",
+        "bg-white-color": "#F5F5F5",
       },
       fontFamily: {
         primary: ["var(--font-outfit)"],
