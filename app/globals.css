@@ -7,7 +7,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply font-primary dark:bg-bg-dark-color text-white leading-loose bg-bg-white-color scroll-smooth;
+    @apply font-primary dark:bg-bg-dark-color text-white leading-loose bg-bg-white-color scroll-smooth transition-colors;
   }
   :root {
     --radius: 0.5rem;
