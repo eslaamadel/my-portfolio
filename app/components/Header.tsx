@@ -71,7 +71,7 @@ const Header = () => {
     <>
       <div className="flex mb:flex-col tb:flex-col justify-center py-5 w-full">
         <div className="flex px-[38px] py-[16px] bg-netu-100 dark:bg-Primary-900 rounded-[80px] w-[888px] justify-between items-center tb:w-full mb:w-full">
-          <a href="/">
+          <a href="/" aria-label="Home">
             <svg
               width="32"
               height="33"

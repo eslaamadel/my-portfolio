@@ -15,7 +15,7 @@ const Footer = () => {
         className="flex flex-col pt-14 pb-10 gap-5 items-center"
       >
         <div className="flex justify-between gap-8 items-center w-full sdk:flex-col tb:flex-col mb:flex-col ">
-          <a href="/">
+          <a href="/" aria-label="Home">
             <svg
               width="32"
               height="33"
