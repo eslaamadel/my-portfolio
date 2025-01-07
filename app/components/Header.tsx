@@ -97,7 +97,7 @@ const Header = () => {
               />
             </svg>
           </a>
-          <div className="hidden tb:block mb:block sdk:block dark:text-netu-100 hamburger-wrapper">
+          <div className="hidden tb:block mb:block sdk:block text-accent-default dark:text-netu-100 hamburger-wrapper">
             <Hamburger
               label="Hamburger menu"
               rounded
@@ -138,7 +138,7 @@ const Header = () => {
           } transition-all duration-300 ease-in-out dk:transition-none edk:transition-none`}
           onClick={() => setOpen(false)} // Close menu when ul is clicked
         >
-          <li className="text-netu-100 fixed z-50 top-[36px] right-[80px]">
+          <li className="text-accent-default dark:text-netu-100 fixed z-50 top-[36px] right-[80px]">
             <Hamburger
               label="Hamburger menu"
               rounded
@@ -151,7 +151,7 @@ const Header = () => {
             <li key={link.id}>
               <a
                 href={`#${link.id}`}
-                className="w-fit ml-8 my-2 px-[48px] text-netu-100 transition-all duration-300 ease-in-out inline-block hover:text-accent-default hover:-translate-y-2 focus:outline-none focus:text-accent-default focus:-translate-y-2"
+                className="w-fit ml-8 my-2 px-[48px] text-neutral-800 dark:text-netu-100 transition-all duration-300 ease-in-out inline-block hover:text-accent-default hover:-translate-y-2 focus:outline-none focus:text-accent-default focus:-translate-y-2"
                 tabIndex={isOpen ? 0 : -1} // Disable tab when ul is closed
               >
                 {link.label}

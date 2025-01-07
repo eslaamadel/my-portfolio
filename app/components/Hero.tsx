@@ -22,7 +22,7 @@ const Hero = () => {
             <h1
               data-aos="fade-up"
               data-aos-duration="400"
-              className="text-h-1 text-netu-50 font-bold text-center edk:w-[850px] w-full tb:text-h-2 mb:text-h-3"
+              className="text-h-1 dark:text-netu-50 text-netu-900 font-bold text-center edk:w-[850px] w-full tb:text-h-2 mb:text-h-3"
             >
               Crafting Unique and Meaningful Experiences Through
               <span className="text-accent-default mb:block">
@@ -42,7 +42,7 @@ const Hero = () => {
             <h2
               data-aos="fade-up"
               data-aos-duration="500"
-              className="text-h-4 text-netu-500 font-light text-center edk:w-[1000px] w-full mb:text-p-1 tb:text-h4 mb:text-p"
+              className="text-h-4 dark:text-netu-500 text-netu-700 font-light text-center edk:w-[1000px] w-full mb:text-p-1 tb:text-h4 mb:text-p"
             >
               Hi, I&apos;m Eslam, a passionate web developer and UI/UX designer
               focused on creating user-friendly and visually appealing digital
