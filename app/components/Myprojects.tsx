@@ -20,10 +20,10 @@ const Myprojects = () => {
           data-aos-duration="700"
           className="flex flex-col justify-center items-center gap-4"
         >
-          <h2 className="text-h-2 text-netu-50 font-bold tb:text-h-3 mb:text-h-3">
+          <h2 className="text-h-2 dark:text-netu-50 text-netu-900 font-bold tb:text-h-3 mb:text-h-3">
             My Projects
           </h2>
-          <p className="text-h-4 text-netu-500 font-normal text-center leading-[130%] mb:text-p tb:text-p">
+          <p className="text-h-4 dark:text-netu-500 text-netu-700 font-normal text-center leading-[130%] mb:text-p tb:text-p">
             Check what I made - this is worth a thousand words about me.
           </p>
         </div>
@@ -31,12 +31,14 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="600"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] bg-Primary-950 rounded-2xl relative overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relative overflow-hidden"
           >
             <div className="flex flex-col gap-6 ">
               <div className="flex flex-col gap-2 z-10">
-                <h2 className="text-h-4 text-netu-50 font-bold">Clickmare</h2>
-                <p className="text-p text-netu-500 font-medium leading-[140%] mb:text-sm-cap">
+                <h2 className="text-h-4 dark:text-netu-50 text-netu-950 font-bold">
+                  Clickmare
+                </h2>
+                <p className="text-p dark:text-netu-500 text-netu-600 font-medium leading-[140%] mb:text-sm-cap">
                   Built a modular, scalable design system for Clickmare
                   Healthcare App using atomic design principles.
                 </p>
@@ -66,12 +68,14 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="700"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] bg-Primary-950  rounded-2xl relatives overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relatives overflow-hidden"
           >
             <div className="flex flex-col gap-6 ">
               <div className="flex flex-col gap-2 z-10">
-                <h2 className="text-h-4 text-netu-50 font-bold">Learnio</h2>
-                <p className="text-p text-netu-500 font-medium leading-[140%] mb:text-sm-cap">
+                <h2 className="text-h-4 dark:text-netu-50 text-netu-950 font-bold">
+                  Learnio
+                </h2>
+                <p className="text-p dark:text-netu-500 text-netu-600 font-medium leading-[140%] mb:text-sm-cap">
                   Learnio offers tailored online courses with seamless,
                   user-friendly accessibility for skill and career advancement.
                 </p>
@@ -101,14 +105,14 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="800"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] bg-Primary-950 rounded-2xl relative overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relative overflow-hidden"
           >
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-2 z-10">
-                <h2 className="text-h-4 text-netu-50 font-bold leading-tight">
+                <h2 className="text-h-4 dark:text-netu-50 text-netu-950 font-bold leading-tight">
                   School Bus Tracking
                 </h2>
-                <p className="text-p text-netu-500 font-medium leading-[140%] mb:text-sm-cap">
+                <p className="text-p dark:text-netu-500 text-netu-600 font-medium leading-[140%] mb:text-sm-cap">
                   The School Bus Tracking System lets parents monitor their
                   children's transportation by using a driver app to send the
                   bus's location to a database.
@@ -139,12 +143,14 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="900"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] bg-Primary-950 rounded-2xl relative overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relative overflow-hidden"
           >
             <div className="flex flex-col gap-6 ">
               <div className="flex flex-col gap-2 z-10">
-                <h2 className="text-h-4 text-netu-50 font-bold">Summit</h2>
-                <p className="text-p text-netu-500 font-medium leading-[140%] mb:text-sm-cap">
+                <h2 className="text-h-4 dark:text-netu-50 text-netu-950 font-bold">
+                  Summit
+                </h2>
+                <p className="text-p dark:text-netu-500 text-netu-600 font-medium leading-[140%] mb:text-sm-cap">
                   Summit Real Estate Website offers a user-friendly platform for
                   exploring property listings. Key features include property
                   search, categories, and highlighted featured listings.
@@ -175,12 +181,14 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] bg-Primary-950 rounded-2xl relative overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relative overflow-hidden"
           >
             <div className="flex flex-col gap-6 ">
               <div className="flex flex-col gap-2 z-10">
-                <h2 className="text-h-4 text-netu-50 font-bold">Bevatal</h2>
-                <p className="text-p text-netu-500 font-medium leading-[140%] mb:text-sm-cap">
+                <h2 className="text-h-4 dark:text-netu-50 text-netu-950 font-bold">
+                  Bevatal
+                </h2>
+                <p className="text-p dark:text-netu-500 text-netu-600 font-medium leading-[140%] mb:text-sm-cap">
                   Dashboards that provide insights into customer behavior, such
                   as total users, total profit, and sales analytics.
                 </p>
@@ -210,12 +218,14 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="1100"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] bg-Primary-950 rounded-2xl relative overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relative overflow-hidden"
           >
             <div className="flex flex-col gap-6 ">
               <div className="flex flex-col gap-2 z-10">
-                <h2 className="text-h-4 text-netu-50 font-bold">Sata Food</h2>
-                <p className="text-p text-netu-500 font-medium leading-[140%] mb:text-sm-cap">
+                <h2 className="text-h-4 dark:text-netu-50 text-netu-950 font-bold">
+                  Sata Food
+                </h2>
+                <p className="text-p dark:text-netu-500 text-netu-600 font-medium leading-[140%] mb:text-sm-cap">
                   SataFood is a landing page for a food delivery service,
                   showcasing key features like easy restaurant browsing, fast
                   ordering, and smooth navigation. It offers a quick overview of
