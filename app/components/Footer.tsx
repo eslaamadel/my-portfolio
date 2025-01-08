@@ -19,7 +19,7 @@ const Footer = () => {
           <a href="/" aria-label="Home">
             <Logo className="text-accent-default dark:text-white" />
           </a>
-          <ul className="flex mb:flex-col mb:gap-1 text-p text-netu-100 font-medium items-center gap-[10px] ml-24 sdk:ml-0 tb:ml-0 tb:text-sm-cap mb:ml-0 mb:text-sm-cap">
+          <ul className="flex mb:flex-col mb:gap-1 text-p dark:text-netu-100 text-netu-800 font-medium items-center gap-[10px] ml-24 sdk:ml-0 tb:ml-0 tb:text-sm-cap mb:ml-0 mb:text-sm-cap">
             {navLinks.map((link) => (
               <li key={link.id}>
                 <a
