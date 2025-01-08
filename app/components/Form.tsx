@@ -160,10 +160,10 @@ const ContactForm = () => {
         data-aos-duration="700"
         className="flex flex-col justify-center items-center gap-4"
       >
-        <h2 className="text-h-2 text-netu-50 font-bold tb:text-h-3 mb:text-h-3 text-center leading-tight">
+        <h2 className="text-h-2 dark:text-netu-50 text-netu-900 font-bold tb:text-h-3 mb:text-h-3 text-center leading-tight">
           Interested in working with me?!
         </h2>
-        <p className="text-h-4 text-netu-500 font-normal text-center leading-[130%] mb:text-p tb:text-p">
+        <p className="text-h-4 dark:text-netu-500 text-netu-700s text-center leading-[130%] mb:text-p tb:text-p">
           Fill out this form, and I'll get in touch with you about your project.
         </p>
       </div>
