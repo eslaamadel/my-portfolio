@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 const Home = () => {
   return (
     <>
-      <div className="absolute w-72 h-72 dark:bg-Primary-400 rounded-full blur-[250px] animate-move-circle opacity-70 -z-10"></div>
+      <div className="absolute w-72 h-72 dark:bg-Primary-400 bg-Primary-800 rounded-full blur-[250px] animate-move-circle opacity-70 -z-10"></div>
       <div
         className="edk:px-20 px-12 absolute z-10 w-full -mt-[112px]"
         tabIndex={-1}

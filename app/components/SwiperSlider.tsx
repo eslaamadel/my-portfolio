@@ -3,12 +3,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Images
-import Image from "next/image";
-import Company1 from "../assets/Edraak.svg";
-import Company2 from "../assets/maharaEN.svg";
-import Company3 from "../assets/Egfwd.svg";
-import Company4 from "../assets/Devloper career logo.svg";
-import Company5 from "../assets/Webflow logo.svg";
+import EdraakLogo from "../assets/Edraak";
+import MaharatechLogo from "../assets/maharaEN";
+import EgfwdLogo from "../assets/Egfwd";
+import DevloperCarrerLogo from "../assets/Devloper career logo";
+import WebflowLogo from "../assets/Webflow logo";
 
 // Import Swiper styles
 import "swiper/css";
@@ -20,7 +19,7 @@ import { Autoplay } from "swiper/modules";
 const SwiperSlider = () => {
   return (
     <>
-      <div className="my-[60px] slider-container">
+      <div className="my-[60px] slider-container text-black dark:text-white">
         <Swiper
           autoplay={{
             delay: 0, // No delay between transitions
@@ -49,19 +48,19 @@ const SwiperSlider = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <Image src={Company1} alt="Logo" />
+            <EdraakLogo />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={Company2} alt="Logo" />
+            <MaharatechLogo />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={Company3} alt="Logo" />
+            <EgfwdLogo />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={Company4} alt="Logo" />
+            <DevloperCarrerLogo />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={Company5} alt="Logo" />
+            <WebflowLogo />
           </SwiperSlide>
         </Swiper>
       </div>
