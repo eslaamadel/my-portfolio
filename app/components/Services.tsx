@@ -69,16 +69,18 @@ const Services = () => {
               data-aos-duration={service.aosDuration}
               className="flex flex-col gap-3 px-5 py-7 w-full dark:bg-Primary-950 bg-netu-100 rounded-2xl justify-between"
             >
-              <div className="p-2 dark:bg-Primary-400/10 w-fit rounded-md">
+              <div className="p-2 bg-Primary-400/10 w-fit rounded-md">
                 {service.icon}
               </div>
               <div className="flex flex-col">
-                <h2 className="text-h-4 font-bold">{service.title}</h2>
-                <p className="text-p font-normal text-netu-500 leading-[130%]">
+                <h2 className="text-h-4 font-bold dark:text-netu-50 text-netu-950">
+                  {service.title}
+                </h2>
+                <p className="text-p font-normal dark:text-netu-500 text-netu-600 leading-[130%]">
                   {service.description}
                 </p>
               </div>
-              <ul className="list-disc list-inside text-sm-cap font-normal text-netu-400">
+              <ul className="list-disc list-inside text-sm-cap font-normal dark:text-netu-400 text-netu-600">
                 {service.list.map((item, itemIndex) => (
                   <li key={itemIndex}>
                     <span className="relative -left-[10px]">{item}</span>

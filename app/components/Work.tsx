@@ -1,12 +1,15 @@
 import Image from "next/image";
-import Logo from "../assets/Sata Company Logo.png";
+import Logo1 from "../assets/Sata Company Logo.png";
 import Logo2 from "../assets/Techzone Company.png";
 import Logo3 from "../assets/ebseg-logo.png";
+import Logo4 from "../assets/Sata Company Logo white.png";
+import Logo5 from "../assets/Techzone Company white.png";
+import Logo6 from "../assets/ebseg-logo white.png";
 
 const workData = [
   {
     title: "UX/UI Designer at SATA Group, Nasr City",
-    img: Logo,
+    img: Logo1,
     date: "MAY 2023 - OCT 2023",
     description:
       "Optimized existing UI designs, crafted elements such as menus, tabs, and widgets, developed original graphic designs (e.g., images, sketches, tables), integrated motion for enhanced interactivity, adhered to style standards for fonts, colors, and images, and created UI mockups and prototypes illustrating site functionality and appearance.",
@@ -65,11 +68,13 @@ const Work = () => {
                 index % 2 === 0 ? "justify-start" : "justify-end"
               } w-full`}
             >
-              <div className="flex flex-col bg-Primary-900/50 p-8 rounded-lg h-fit w-2/5 mb:w-full tb:w-full sdk:w-full dk:w-full gap-5 shadow-sm">
+              <div className="flex flex-col dark:bg-Primary-900/50 bg-netu-100 p-8 rounded-lg h-fit w-2/5 mb:w-full tb:w-full sdk:w-full dk:w-full gap-5 shadow-sm">
                 <div className="flex items-center justify-between gap-4">
                   <div className="flex flex-col">
-                    <span className="text-p leading-[130%]">{work.title}</span>
-                    <p className="text-sm-cap  mb:w-max text-netu-500">
+                    <span className="dark:text-netu-50 text-netu-950 text-p leading-[130%]">
+                      {work.title}
+                    </span>
+                    <p className="text-sm-cap  mb:w-max dark:text-netu-500 text-netu-600">
                       {work.date}
                     </p>
                   </div>
@@ -79,7 +84,7 @@ const Work = () => {
                     alt={`${work.title} Logo`}
                   />
                 </div>
-                <p className="leading-[145%] font-normal text-p mt-2 text-netu-500 mb:text-sm-cap">
+                <p className="leading-[145%] font-normal text-p mt-2 dark:text-netu-500 text-netu-600 mb:text-sm-cap">
                   {work.description}
                 </p>
               </div>

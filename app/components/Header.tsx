@@ -111,7 +111,7 @@ const Header = () => {
         {/* Mobile Navbar */}
         <ul
           ref={menuRef}
-          className={`flex-col text-h-3 dark:text-netu-100 text-netu-800 font-semibold gap-[10px] bg-bg-color/80 backdrop-blur-md h-full w-0 fixed top-0 left-0 mb:flex tb:flex sdk:flex justify-center overflow-hidden ${
+          className={`flex-col text-h-3 dark:text-netu-100 text-netu-800 font-semibold gap-[10px] dark:bg-bg-dark-color/60 bg-bg-white-color/60  backdrop-blur-md h-full w-0 fixed top-0 left-0 mb:flex tb:flex sdk:flex justify-center overflow-hidden ${
             isOpen ? "mb:w-full tb:w-full sdk:w-full" : "mb:w-0 tb:w-0 sdk:w-0 "
           } transition-all duration-300 ease-in-out dk:transition-none edk:transition-none`}
           onClick={() => setOpen(false)} // Close menu when ul is clicked
