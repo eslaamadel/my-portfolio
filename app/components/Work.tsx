@@ -57,8 +57,7 @@ const Work = () => {
           </p>
         </div>
         <div className="flex flex-col gap-8 relative w-full">
-          <span className="block h-full w-px bg-netu-500/30 rounded-sm absolute inset-0 m-auto mb:hidden tb:hidden sdk:hidden dk:hidden"></span>
-          <span className="block h-0 w-px bg-accent-defaults rounded-sm absolute inset-0 m-auto mt-0 mb:hidden tb:hidden sdk:hidden dk:hidden"></span>
+          <span className="block h-full w-px dark:bg-netu-500/30 border-netu-600 rounded-sm absolute inset-0 m-auto mb:hidden tb:hidden sdk:hidden dk:hidden"></span>
           {workData.map((work, index) => (
             <div
               key={index}
