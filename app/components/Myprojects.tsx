@@ -31,7 +31,7 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="600"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relative overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-900 bg-netu-100 rounded-2xl relative overflow-hidden"
           >
             <div className="flex flex-col gap-6 ">
               <div className="flex flex-col gap-2 z-10">
@@ -68,7 +68,7 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="700"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relatives overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-900 bg-netu-100 rounded-2xl relatives overflow-hidden"
           >
             <div className="flex flex-col gap-6 ">
               <div className="flex flex-col gap-2 z-10">
@@ -105,7 +105,7 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="800"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relative overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-900 bg-netu-100 rounded-2xl relative overflow-hidden"
           >
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-2 z-10">
@@ -143,7 +143,7 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="900"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relative overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-900 bg-netu-100 rounded-2xl relative overflow-hidden"
           >
             <div className="flex flex-col gap-6 ">
               <div className="flex flex-col gap-2 z-10">
@@ -181,7 +181,7 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relative overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-900 bg-netu-100 rounded-2xl relative overflow-hidden"
           >
             <div className="flex flex-col gap-6 ">
               <div className="flex flex-col gap-2 z-10">
@@ -218,7 +218,7 @@ const Myprojects = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="1100"
-            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-950 bg-netu-100 rounded-2xl relative overflow-hidden"
+            className="px-7 py-[68px] h-[550px] mb:h-[450px] dark:bg-Primary-900 bg-netu-100 rounded-2xl relative overflow-hidden"
           >
             <div className="flex flex-col gap-6 ">
               <div className="flex flex-col gap-2 z-10">
