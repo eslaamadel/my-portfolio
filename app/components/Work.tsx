@@ -3,13 +3,13 @@ import Logo1 from "../assets/Sata Company Logo.png";
 import Logo2 from "../assets/Techzone Company.png";
 import Logo3 from "../assets/ebseg-logo.png";
 import Logo4 from "../assets/Sata Company Logo white.png";
-import Logo5 from "../assets/Techzone Company white.png";
+import Logo5 from "../assets/Techzone Company White.png";
 import Logo6 from "../assets/ebseg-logo white.png";
 
 const workData = [
   {
     title: "UX/UI Designer at SATA Group, Nasr City",
-    img: Logo1,
+    img: { light: Logo1, dark: Logo4 },
     date: "MAY 2023 - OCT 2023",
     description:
       "Optimized existing UI designs, crafted elements such as menus, tabs, and widgets, developed original graphic designs (e.g., images, sketches, tables), integrated motion for enhanced interactivity, adhered to style standards for fonts, colors, and images, and created UI mockups and prototypes illustrating site functionality and appearance.",
@@ -18,7 +18,7 @@ const workData = [
   },
   {
     title: "UX/UI Designer at Techzone Labs, (Remote)",
-    img: Logo2,
+    img: { light: Logo2, dark: Logo5 },
     date: "Nov 2023 - Apr 2024",
     description:
       "Crafting intuitive digital experiences for products, I collaborate closely with cross-functional teams to translate user needs into seamless design solutions. My expertise includes wireframing, prototyping, and creating high-fidelity designs to enhance user engagement and satisfaction.",
@@ -27,7 +27,7 @@ const workData = [
   },
   {
     title: "UX/UI Developer at eBSEG, Almaadi",
-    img: Logo3,
+    img: { light: Logo3, dark: Logo6 },
     date: "Nov 2024 - Present",
     description:
       "Developing wireframes and prototypes while transforming Figma designs into functional layouts using HTML, Tailwind CSS, and JavaScript frameworks. Focusing on responsive design and accessibility. Collaborating with cross-functional teams to implement user feedback and maintain consistent design standards across the platform.",
@@ -79,8 +79,13 @@ const Work = () => {
                     </p>
                   </div>
                   <Image
-                    className="mb:w-1/4 tb:w-[15%] sdk:w-[10%] dk:w-[10%] w-1/6"
-                    src={work.img}
+                    className="mb:w-1/4 tb:w-[15%] sdk:w-[10%] dk:w-[10%] w-1/6 dark:block hidden"
+                    src={work.img.light}
+                    alt={`${work.title} Logo`}
+                  />
+                  <Image
+                    className="mb:w-1/4 tb:w-[15%] sdk:w-[10%] dk:w-[10%] w-1/6 dark:hidden block"
+                    src={work.img.dark}
                     alt={`${work.title} Logo`}
                   />
                 </div>
