@@ -57,7 +57,7 @@ const Work = () => {
           </p>
         </div>
         <div className="flex flex-col gap-8 relative w-full">
-          <span className="block h-full w-px dark:bg-netu-500/30 border-netu-600 rounded-sm absolute inset-0 m-auto mb:hidden tb:hidden sdk:hidden dk:hidden"></span>
+          <span className="block h-full w-px dark:bg-netu-500/30 bg-netu-500 border-netu-600 rounded-sm absolute inset-0 m-auto mb:hidden tb:hidden sdk:hidden dk:hidden"></span>
           {workData.map((work, index) => (
             <div
               key={index}
@@ -67,7 +67,7 @@ const Work = () => {
                 index % 2 === 0 ? "justify-start" : "justify-end"
               } w-full`}
             >
-              <div className="flex flex-col dark:bg-Primary-900/50 bg-netu-100 p-8 rounded-lg h-fit w-2/5 mb:w-full tb:w-full sdk:w-full dk:w-full gap-5 shadow-sm">
+              <div className="flex flex-col dark:bg-Primary-900/50 bg-Primary-100/50 p-8 rounded-lg h-fit w-2/5 mb:w-full tb:w-full sdk:w-full dk:w-full gap-5 shadow-sm">
                 <div className="flex items-center justify-between gap-4">
                   <div className="flex flex-col">
                     <span className="dark:text-netu-50 text-netu-950 text-p leading-[130%]">

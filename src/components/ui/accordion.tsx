@@ -14,7 +14,10 @@ const AccordionItem = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AccordionPrimitive.Item
     ref={ref}
-    className={cn("border-b border-b-netu-600/50", className)}
+    className={cn(
+      "border-b dark:text-white text-black border-b-netu-600/50",
+      className
+    )}
     {...props}
   />
 ));
@@ -34,7 +37,7 @@ const AccordionTrigger = React.forwardRef<
       {...props}
     >
       {children}
-      <ChevronDownIcon className="h-5 w-5 shrink-0 text-netu-400 transition-transform duration-200" />
+      <ChevronDownIcon className="h-5 w-5 shrink-0 dark:text-netu-400 text-netu-700 transition-transform duration-200" />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
@@ -46,7 +49,7 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down text-netu-500/80 leading-snug"
+    className="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down dark:text-netu-500/80 text-netu-600 leading-snug"
     {...props}
   >
     <div

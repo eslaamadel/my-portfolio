@@ -67,7 +67,7 @@ const Services = () => {
               key={index}
               data-aos="fade-up"
               data-aos-duration={service.aosDuration}
-              className="flex flex-col gap-3 px-5 py-7 w-full dark:bg-Primary-900 bg-netu-100 rounded-2xl justify-between"
+              className="flex flex-col gap-3 px-5 py-7 w-full dark:bg-Primary-900 bg-Primary-100/50 rounded-2xl justify-between"
             >
               <div className="p-2 bg-Primary-400/10 w-fit rounded-md">
                 {service.icon}
