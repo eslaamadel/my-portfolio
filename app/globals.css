@@ -50,3 +50,7 @@
 .animate-move-circle {
   animation: moveCircle 15s infinite; /* 6s duration, loop infinitely */
 }
+
+.hamburger-react * {
+  transition: none !important;
+}

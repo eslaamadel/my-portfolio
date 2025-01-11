@@ -5,6 +5,7 @@ import { Pivot as Hamburger } from "hamburger-react";
 import Logo from "../assets/Logo"; /* convert svg to react component from SVGR Playground Website and make the fill "currentColor" in component */
 import { Button } from "@/components/ui/button";
 import { LuArrowUpRight } from "react-icons/lu";
+import ThemeToogle from "./ToogleSwitch";
 
 const navLinks = [
   { id: "Home", label: "Home" },
@@ -75,7 +76,7 @@ const Header = () => {
           <a href="/" aria-label="Home">
             <Logo className="text-accent-default dark:text-white" />
           </a>
-          <div className="hidden tb:block mb:block sdk:block text-accent-default dark:text-netu-100 hamburger-wrapper">
+          <div className="hidden tb:block mb:block sdk:block text-accent-default dark:text-netu-100 hamburger-wrapper ml-auto !transition-none">
             <Hamburger
               label="Hamburger menu"
               rounded
@@ -83,7 +84,7 @@ const Header = () => {
               toggle={setOpen}
             />
           </div>
-          <div className="flex gap-4 mb:hidden tb:hidden sdk:hidden items-center">
+          <div className="flex gap-4 mb:hidden tb:hidden sdk:hidden items-center ml-auto">
             <ul className="flex text-p dark:text-netu-100 text-netu-800 font-medium items-center gap-[10px]">
               {navLinks.map((link) => (
                 <li key={link.id}>
@@ -106,6 +107,9 @@ const Header = () => {
               </a>
             </Button>
           </div>
+          <div className="ml-3">
+            <ThemeToogle />
+          </div>
         </div>
 
         {/* Mobile Navbar */}
@@ -116,7 +120,7 @@ const Header = () => {
           } transition-all duration-300 ease-in-out dk:transition-none edk:transition-none`}
           onClick={() => setOpen(false)} // Close menu when ul is clicked
         >
-          <li className="text-accent-default dark:text-netu-100 fixed z-50 top-[36px] right-[80px]">
+          <li className="text-accent-default dark:text-netu-100 fixed z-50 top-[36px] right-[130px]">
             <Hamburger
               label="Hamburger menu"
               rounded

@@ -19,7 +19,7 @@ const AboutMe = () => {
             data-aos-duration="700"
             className="flex flex-col gap-12 dk:w-2/5 edk:w-2/5"
           >
-            <div className="pt-4 pl-4 border-2 border-solid border-netu-500/30 rounded-2xl dark:bg-Primary-900 bg-Primary-100/50 w-full">
+            <div className="pt-4 pl-4 border-2 border-solid border-netu-500/30 rounded-2xl dark:bg-Primary-900/20 bg-Primary-100/50 w-full">
               <Image src={Me} alt="Photo of me" />
             </div>
             <p className="text-h-3 leading-tight dark:text-netu-300 text-netu-600 font-normal tb:text-h-4 mb:text-p">
