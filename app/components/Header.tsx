@@ -76,7 +76,7 @@ const Header = () => {
           <a href="/" aria-label="Home">
             <Logo className="text-accent-default dark:text-white" />
           </a>
-          <div className="hidden tb:block mb:block sdk:block text-accent-default dark:text-netu-100 hamburger-wrapper ml-auto !transition-none">
+          <div className="hidden tb:block mb:block sdk:block text-accent-default dark:text-netu-100 hamburger-wrapper ml-auto">
             <Hamburger
               label="Hamburger menu"
               rounded
