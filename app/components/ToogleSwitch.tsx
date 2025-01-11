@@ -4,33 +4,33 @@ import { MdSunny } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
 
 const ThemeToggle = () => {
-  // Initialize darkmode state only on the client-side
   const [darkmode, setDarkMode] = useState(() => {
+    // Check localStorage directly during the first render
     if (typeof window !== "undefined") {
-      // Check if localStorage is available in the browser
       const storedTheme = localStorage.getItem("theme");
-      return storedTheme === "dark"; // If localStorage has dark mode, set to true
+      return storedTheme === "dark" || storedTheme === null; // Default to dark
     }
-    return true; // Default to dark mode if not in the browser
+    return true; // Fallback to dark during SSR
   });
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Ensure this runs only on the client-side
-      if (darkmode) {
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-        localStorage.setItem("theme", "light");
-      }
+    // Sync the theme to localStorage and document class
+    if (darkmode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   }, [darkmode]);
+
   return (
     <div className="flex">
-      <Toggle aria-label="Toggle theme" onClick={() => setDarkMode(!darkmode)}>
-        <FaMoon className="dark:hidden block" />
-        <MdSunny className="dark:block hidden" />
+      <Toggle
+        aria-label="Toggle theme"
+        onClick={() => setDarkMode((prevMode) => !prevMode)}
+      >
+        {darkmode ? <FaMoon /> : <MdSunny />}
       </Toggle>
     </div>
   );
