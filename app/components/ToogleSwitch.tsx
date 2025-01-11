@@ -19,7 +19,7 @@ const ThemeToogle = () => {
   }, [darkmode]);
   return (
     <div>
-      <Toggle onClick={() => setDarkMode(!darkmode)}>
+      <Toggle aria-label="Toogle" onClick={() => setDarkMode(!darkmode)}>
         <FaMoon className="dark:hidden block" />
         <MdSunny className="dark:block hidden" />
       </Toggle>
