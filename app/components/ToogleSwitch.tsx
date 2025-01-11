@@ -2,13 +2,16 @@ import { useState, useEffect } from "react";
 import { Toggle } from "@/components/ui/toggle";
 import { MdSunny } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
-const ThemeToogle = () => {
-  const [darkmode, setDarkMode] = useState(true);
+
+const ThemeToggle = () => {
+  const [darkmode, setDarkMode] = useState(() => {
+    // Initialize darkmode based on localStorage value
+    const storedTheme = localStorage.getItem("theme");
+    return storedTheme === "dark"; // If localStorage has dark mode, set to true
+  });
+
   useEffect(() => {
-    const theme = localStorage.getItem("theme");
-    if (theme === "dark") setDarkMode(true);
-  }, []);
-  useEffect(() => {
+    // Update the document class and localStorage based on darkmode state
     if (darkmode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
@@ -17,9 +20,10 @@ const ThemeToogle = () => {
       localStorage.setItem("theme", "light");
     }
   }, [darkmode]);
+
   return (
     <div>
-      <Toggle aria-label="Toogle" onClick={() => setDarkMode(!darkmode)}>
+      <Toggle aria-label="Toggle theme" onClick={() => setDarkMode(!darkmode)}>
         <FaMoon className="dark:hidden block" />
         <MdSunny className="dark:block hidden" />
       </Toggle>
@@ -27,4 +31,4 @@ const ThemeToogle = () => {
   );
 };
 
-export default ThemeToogle;
+export default ThemeToggle;
