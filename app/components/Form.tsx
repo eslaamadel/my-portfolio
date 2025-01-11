@@ -312,7 +312,7 @@ const ContactForm = () => {
                         </FormControl>
                         <FormLabel className="font-light inline">
                           {option.label}
-                          <FormLabel className="text-netu-600">
+                          <FormLabel className="dark:text-netu-600 text-netu-600 ">
                             <span className="ml-2 text-sm-cap ">
                               {option.ex}
                             </span>
