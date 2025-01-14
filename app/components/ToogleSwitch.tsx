@@ -30,7 +30,7 @@ const ThemeToggle = () => {
         aria-label="Toggle theme"
         onClick={() => setDarkMode((prevMode) => !prevMode)}
       >
-        {darkmode ? <FaMoon /> : <MdSunny />}
+        {darkmode ? <MdSunny /> : <FaMoon />}
       </Toggle>
     </div>
   );

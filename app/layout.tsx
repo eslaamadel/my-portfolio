@@ -21,24 +21,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="flex flex-col w-full overflow-x-hidden"
-      tabIndex={-1}
-    >
+    <html lang="en" className="flex flex-col w-full overflow-x-hidden">
       <head>
+        {/* Script for immediate theme handling */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
-      (function() {
-        const storedTheme = localStorage.getItem('theme');
-        if (storedTheme === 'light') {
-          document.documentElement.classList.remove('dark');
-        } else {
-          document.documentElement.classList.add('dark');
-        }
-      })();
-    `,
+              (function() {
+                const theme = localStorage.getItem('theme') || 'dark'; // Default to dark
+                document.documentElement.classList.toggle('dark', theme === 'dark');
+              })();
+            `,
           }}
         />
       </head>
