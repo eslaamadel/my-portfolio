@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -21,22 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="flex flex-col w-full overflow-x-hidden">
-      <head>
-        {/* Script for immediate theme handling */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const theme = localStorage.getItem('theme') || 'dark'; // Default to dark
-                document.documentElement.classList.toggle('dark', theme === 'dark');
-              })();
-            `,
-          }}
-        />
-      </head>
+    <html
+      suppressHydrationWarning
+      lang="en"
+      className="flex flex-col w-full overflow-x-hidden"
+    >
+      <head />
       <body className={`${outfit.variable} relative overflow-x-clip`}>
-        <main>{children}</main>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <main>{children}</main>
+        </ThemeProvider>
         <Toaster />
       </body>
     </html>

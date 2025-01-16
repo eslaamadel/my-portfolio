@@ -1,36 +1,31 @@
-import { useState, useEffect } from "react";
+"use client";
+import { useTheme } from "next-themes";
 import { Toggle } from "@/components/ui/toggle";
 import { MdSunny } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 const ThemeToggle = () => {
-  const [darkmode, setDarkMode] = useState(() => {
-    // Check localStorage directly during the first render
-    if (typeof window !== "undefined") {
-      const storedTheme = localStorage.getItem("theme");
-      return storedTheme === "dark" || storedTheme === null; // Default to dark
-    }
-    return true; // Fallback to dark during SSR
-  });
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
+  // Ensure the component is only rendered after it's mounted on the client
   useEffect(() => {
-    // Sync the theme to localStorage and document class
-    if (darkmode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [darkmode]);
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // Render a placeholder or nothing during SSR
+    return null;
+  }
 
   return (
     <div className="flex">
       <Toggle
         aria-label="Toggle theme"
-        onClick={() => setDarkMode((prevMode) => !prevMode)}
+        onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       >
-        {darkmode ? <MdSunny /> : <FaMoon />}
+        {resolvedTheme === "dark" ? <MdSunny /> : <FaMoon />}
       </Toggle>
     </div>
   );
