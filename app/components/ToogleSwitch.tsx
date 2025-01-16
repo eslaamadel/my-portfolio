@@ -14,11 +14,6 @@ const ThemeToggle = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    // Render a placeholder or nothing during SSR
-    return null;
-  }
-
   return (
     <div className="flex">
       <Toggle
