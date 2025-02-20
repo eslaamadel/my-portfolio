@@ -77,9 +77,9 @@ const ContactForm = () => {
 
   const timelineOption = useMemo(
     () => [
-      { id: "Short-tream", label: "Short-term ", ex: "(1-3 months)" },
-      { id: "mid-tream", label: "Mid-term", ex: "(3-6 months)" },
-      { id: "log-tream", label: "Long-term", ex: "(6+ months)" },
+      { id: "Short-term", label: "Short-term ", ex: "(1-3 months)" },
+      { id: "mid-term", label: "Mid-term", ex: "(3-6 months)" },
+      { id: "long-term", label: "Long-term", ex: "(6+ months)" },
     ],
     []
   );
