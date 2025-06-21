@@ -1,8 +1,3 @@
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }
