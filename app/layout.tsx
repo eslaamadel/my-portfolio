@@ -28,7 +28,7 @@ export default function RootLayout({
       className="flex flex-col w-full overflow-x-hidden"
     >
       <head />
-      <body className={`${outfit.variable} relative overflow-x-clip`}>
+      <body className={`${outfit.className} relative overflow-x-clip`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <main>{children}</main>
         </ThemeProvider>
