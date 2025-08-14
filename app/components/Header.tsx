@@ -133,7 +133,7 @@ const Header = () => {
             <li key={link.id}>
               <a
                 href={`#${link.id}`}
-                className="w-fit ml-8 my-2 px-[48px] text-neutral-800 dark:text-netu-100 transition-all duration-300 ease-in-out inline-block hover:text-accent-default hover:-translate-y-2 focus:outline-none focus:text-accent-default focus:-translate-y-2"
+                className="w-fit ml-8 my-2 px-[48px] transition-all duration-300 ease-in-out inline-block hover:text-accent-default hover:-translate-y-2 focus:outline-none focus:text-accent-default focus:-translate-y-2"
                 tabIndex={isOpen ? 0 : -1} // Disable tab when ul is closed
               >
                 {link.label}
