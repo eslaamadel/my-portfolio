@@ -57,9 +57,6 @@ const config: Config = {
         "bg-dark-color": "#000B1A",
         "bg-white-color": "#F5F5F5",
       },
-      fontFamily: {
-        primary: ["var(--font-outfit)"],
-      },
       fontSize: {
         "h-1": "61px",
         "h-2": "49px",
