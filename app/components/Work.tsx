@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Logo1 from "../assets/Sata Company Logo.png";
 import Logo2 from "../assets/Techzone Company.png";
-import Logo3 from "../assets/ebseg-logo.png";
+import Logo3 from "../assets/ebseg-logo.svg";
 import Logo4 from "../assets/Sata Company Logo-White.png";
 import Logo5 from "../assets/Techzone Company-White.png";
-import Logo6 from "../assets/ebseg-logo-White.png";
+import Logo6 from "../assets/ebseg-logo-White.svg";
 
 const workData = [
   {
